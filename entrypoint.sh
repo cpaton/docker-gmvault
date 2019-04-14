@@ -35,7 +35,7 @@ echo "${GMVAULT_QUICK_SYNC_SCHEDULE} '/app/BackupGmail.sh' 'quick'" >> $CRONTAB
 OAUTH_TOKEN="/data/home/.gmvault/${GMVAULT_EMAIL_ADDRESS}.oauth2"
 if [ -f $OAUTH_TOKEN ]
 then
-    su-exec gmvault '/app/BackupGmail.sh' 'quick'
+    /app/BackupGmail.sh quick
     if [ $? != 0 ]
     then
       echo "Initial backup failed"

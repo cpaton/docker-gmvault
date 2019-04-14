@@ -30,5 +30,6 @@ RUN apk update && \
     && addgroup -g 9000 gmvault \
     && adduser -h /data/home -D -u 9000 -s "/bin/bash" -G "gmvault" gmvault
 
-COPY *.sh /app/    
+COPY *.sh /app/  
+RUN chmod u+x,g+x,o+x /app/*.sh  
 ENTRYPOINT [ "/app/entrypoint.sh" ]

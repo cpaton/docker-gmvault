@@ -1,1 +1,1 @@
-docker build --file Dockerfile --tag capaton/docker-gmvault:latest .
+docker build --file Dockerfile --tag capaton/gmvault:latest .

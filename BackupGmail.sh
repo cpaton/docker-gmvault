@@ -39,7 +39,7 @@ HOME=/data/home
 
 set_task "Backup $GMVAULT_EMAIL_ADDRESS"
 cd $HOME
-/bin/bash gmvault sync -t $1 -d /data/$GMVAULT_EMAIL_ADDRESS $GMVAULT_EMAIL_ADDRESS >> $LOGFILE 2>&1
+/bin/bash gmvault sync --type $1 --passwd --db-dir /data/$GMVAULT_EMAIL_ADDRESS $GMVAULT_EMAIL_ADDRESS >> $LOGFILE 2>&1
 [ $? != 0 ] && error_handler
 
 [ $ERROR_COUNT == 0 ] && report "Success"  || report "Failed"

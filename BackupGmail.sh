@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/bash
 
 NOW=$(date +"%Y%m%d%H%M")
 CURRENTSCRIPT=$(basename $0 .sh)

@@ -4,8 +4,8 @@
 
 # Set up crontab.
 echo "" > $CRONTAB
-echo "${GMVAULT_FULL_SYNC_SCHEDULE} '/app/BackupGmail.sh' 'full'" >> $CRONTAB
-echo "${GMVAULT_QUICK_SYNC_SCHEDULE} '/app/BackupGmail.sh' 'quick'" >> $CRONTAB
+echo "${GMVAULT_FULL_SYNC_SCHEDULE} /app/BackupGmail.sh full" >> $CRONTAB
+echo "${GMVAULT_QUICK_SYNC_SCHEDULE} /app/BackupGmail.sh quick" >> $CRONTAB
 
 ls -la /data/home/.gmvault
 

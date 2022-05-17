@@ -26,3 +26,6 @@ echo "Date: `date`."
 
 chown -R gmvault:gmvault /data
 chown -R gmvault:gmvault /data/home
+chmod u+rwx /data/home
+chmod o+rx /app/*.sh
+chmod u+rwx,g+rwx,o+rwx /log
